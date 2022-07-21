@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% load humanize %}
 {% block main %}
-<p>これまでに{{ num_services|intcomma }}個のサービスを提供しました</p>
+<p>現在（{% now "Y年m月d日h時i分s秒" %}）までに{{ num_services|intcomma }}個のサービスを提供しました</p>
 <div>アプリケーション一覧</div>
 <ul>
     {% for skill in skills %}
