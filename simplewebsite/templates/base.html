@@ -14,6 +14,11 @@
 
 <body class="body">
     {% include "_navbar.html" %}
+    {% if username == 'jumpei' %}
+    <h3>Welcom!!{{username}}!!</h3>
+    {% else %}
+    <h3>Welcome!!</h3>
+    {% endif %}
     <img src="{% static 'python.png' %}"
     <h1 class="h1">Welcome!!Python Django WebSite!!</h1>
     {% block main %}
